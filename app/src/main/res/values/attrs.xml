@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MyIcon">
+        <attr name="my_icon_default" format="reference" />
+        <attr name="my_icon_pressed" format="reference" />
+        <attr name="my_icon_clickabled" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="MyIconAndText">
+        <attr name="icon_default" format="reference" />
+        <attr name="icon_pressed" format="reference" />
+        <attr name="icon_text" format="string|reference" />
+        <attr name="icon_text_defalult_color" format="reference" />
+        <attr name="icon_text_pressed_color" format="reference" />
+    </declare-styleable>
+
+</resources>

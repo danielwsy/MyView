@@ -1,18 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.danielwang.myview.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="24dp">
 
-</android.support.constraint.ConstraintLayout>
+        <com.example.danielwang.myview.MyIcon
+            android:id="@+id/myicon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:my_icon_clickabled="true"
+            app:my_icon_default="@drawable/icon_store_details_back_pressed"
+            app:my_icon_pressed="@drawable/icon_store_details_back" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <com.example.danielwang.myview.MyIconAndText
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon_default="@drawable/icon_store_details_back_pressed"
+            app:icon_pressed="@drawable/icon_store_details_back"
+            app:icon_text_defalult_color="@color/black"
+            app:icon_text_pressed_color="@color/green"
+            app:icon_text="hahaa" />
+    </RelativeLayout>
+
+
+</LinearLayout>
